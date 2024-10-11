@@ -1,0 +1,65 @@
+/* estilos.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    background-image: url("bg.jpg");
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    font-family: Arial, sans-serif; 
+    font-style: italic; 
+    color: black;
+    text-align: center;
+    margin:2%
+}
+
+form {
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+input[type="number"] {
+    font-weight: bold; 
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+input[type="button"]:hover {
+    background-color: #777;
+}
+
+select {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#resultado {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
