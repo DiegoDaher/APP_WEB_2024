@@ -17,11 +17,11 @@ function operacion(){
         resultado = document.getElementById("resultado").innerHTML = `<h2> ${n1} ${tipoop} ${n2} = ${ope} </h2>`
     }
     else{
-        /* let resultado = document.getElementById("resultado");
-        resultado.innerHTML = `<h2>Ingrese solo números por favor...</h2>` */
+        resultado = document.getElementById("resultado");
+        resultado.innerHTML = `<h2>Ingrese solo números por favor...</h2>`;
         alert("Ingrese solo números por favor...")
     }
 }
 function isnumber(n){
-    return !isNaN(parseFloat(n) &&isFinite)
+    return !isNaN(parseFloat(n) &&isFinite(n))
 }

@@ -1,65 +1,66 @@
-/* estilos.css */
 *{
     margin: 0;
     padding: 0;
 }
-body {
-    padding: 2%;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin: 0;
-    background-image: url("bg.jpg");
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(bg.jpg);
+    background-size: cover;
     background-attachment:fixed ;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    color: black; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vmax;
+    color: rgb(255, 255, 255);
 }
 
-h2 {
-    font-family: Arial, sans-serif; 
-    font-style: italic; 
-    color: black;
+#contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2{
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    font-size: 3vw;
     text-align: center;
-    margin:2%
+    font-weight: normal;
+    font-style: italic;
+    background-color: hsla(0, 0%, 0%, 0.807);
 }
-
-form {
-    padding-left: 40%;
-    padding-right: 40%;
-}
-
-input[type="number"] {
-    font-weight: bold; 
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-input[type="button"] {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #555;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    position: relative;
-
-}
-
-input[type="button"]:hover {
-    background-color: #777;
-}
-
-select {
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-#resultado {
-    margin-top: 10px;
+form{
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: 1.5vw;
     font-weight: bold;
-    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.caja1{
+    color: black;
+    font-weight:bold ;
+    font-size: 1.5vw;
+    width: 10%;
+}
+
+.caja2{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: auto;
+}
+
+#boton{
+    margin-top: 3vw;
+    padding: 1vw;
+    background-color: rgb(84, 158, 70);
+    border-radius: 10px;
+}
+#boton:hover{
+    margin-top: 3vw;
+    padding: 1vw;
+    background-color: rgb(50, 107, 55);
+    border-radius: 10px;
 }
