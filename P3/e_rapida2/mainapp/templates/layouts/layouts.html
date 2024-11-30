@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/estilos.css" %}" type="text/css">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header>
+        <div id="logotipo">
+            <img src="{% static "img/descarga.png" %}" alt="Imagen Django" title="Django">
+            <h1>Django Proyecto Web</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url "index" %}" >Inicio</a></li>
+            <li><a href="{% url "about" %}">Acerca de</a></li>
+            <li><a href="{% url "mision" %}">Mision</a></li>
+            <li><a href="{% url "vision" %}">Vision</a></li>
+            <li><a href="{% url "registrar" %}">Registrar</a></li>
+            <li><a href="{% url "iniciar" %}">Iniciar Sesion</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <div class="box">
+            {% block content %}{% endblock content %}
+        </div>
+    </section>
+</body>
+</html>

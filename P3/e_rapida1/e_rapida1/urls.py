@@ -1,5 +1,5 @@
 """
-URL configuration for e_rapida1 project.
+URL configuration for proyectoUTD project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -17,16 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mainapp import views
-from django.conf.urls import handler404, handler500
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inicio/', views.index,name='index'),
-    path('', views.index,name='index'),
-    path('about/', views.about,name='about'),
-    path('mision/', views.mision,name='mision'),
-    path('vison/', views.vision,name='vision'),
+    path('', views.index, name='inicio'),
+    path('inicio/', views.index, name= 'index'),    
+    path('acercade/', views.about, name= 'acercade'),
+    path('mision/', views.mision, name= 'mision'),
+    path('vision/', views.vision , name= 'vision')
 ]
-
-handler404 = 'mainapp.views.error404'
-

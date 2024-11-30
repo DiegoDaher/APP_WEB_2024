@@ -1,0 +1,11 @@
+{% extends "layouts/layouts.html" %}
+{% block title %}
+{{title}}
+{% endblock title %}
+
+{% block content %}
+<script>
+    alert('Esta pagina no existe. lo voy a mandar a página de incio');
+    location.href='{% url "inicio" %}'
+</script>
+{% endblock content %}
