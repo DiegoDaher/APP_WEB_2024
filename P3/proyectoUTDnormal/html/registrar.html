@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <?php
+    include 'php/`registro_usuario.html';	
+    include 'php/`conexion.html';
+    ?>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Registrar|php Proyecto UTD
+    </title>
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="logotipo">
+            <img src="../img/logophp.png" alt="Imagen php" title="php">
+            <h1>php Proyecto Web</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Inicio</a></li>
+            <li><a href="mision.html">Mision</a></li>
+            <li><a href="vision.html">Vision</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+            <li><a href="registrar.html">Registrarse</a></li>
+            <li><a href="iniciarsesion.html">Iniciar Sesion</a></li>
+            <li><a href="logout.html">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+       <div class="box">
+            <h1>Registro</h1>
+            <form action="../php/registro_usuario.php" method="POST">
+                <label for="username">Usuario:</label>
+                <input type="text" name="username" required>
+                <label for="first_name">Nombre:</label>
+                <input type="text" name="first_name" required>
+                <label for="last_name">Apellido:</label>
+                <input type="text" name="last_name" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" required>
+                <label for="password2">Contraseña (confirmación):</label>
+                <input type="password" name="password2" required>
+                <input type="submit" value="Registrarse">
+            </form>
+       </div>
+    </section>
+    <footer>
+        <p>Curso de Django con Dagonline &copy; 2024 | Visitado el: 01/10/24</p>
+    </footer>
+</body>
+</html>
